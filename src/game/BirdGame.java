@@ -24,7 +24,7 @@ public class BirdGame extends JPanel {
     public  static  final  int OVER = 2;
 
     public BirdGame() throws Exception{
-        background = new ImageIcon("img/background.png").getImage();
+        background = new ImageIcon("img/backgrond.png").getImage();
         startImage = new ImageIcon("img/start.png").getImage();
         overImage = new ImageIcon("img/gameover.png").getImage();
         ground=new Ground();
@@ -37,10 +37,9 @@ public class BirdGame extends JPanel {
 
     public void paint(Graphics g){
         super.paint(g);
-        Color c = g.getColor();
         g.setColor(Color.white);
 
-        g.drawImage(background,0,0,null);
+        g.drawImage(background, 0, 0,null);
         g.drawImage(ground.img,ground.x,ground.y,null);
         g.drawImage(column1.img,column1.x-column1.width/2,column1.y-column1.height/2,null);
         g.drawImage(column2.img,column2.x-column2.width/2,column2.y-column2.height/2,null);
